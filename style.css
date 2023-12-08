@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #171717;
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+}
+.navigation{
+    width: 15%;
+    background-color: #272727;
+    border-right: 2px solid #7A8580;
+    padding: 20px;
+}
