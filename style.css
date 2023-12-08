@@ -13,4 +13,51 @@ body{
     background-color: #272727;
     border-right: 2px solid #7A8580;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    height: 100000px;
+}
+.logo{
+    width: 80%;
+}
+.menu{
+    list-style: none;
+    color: white;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 10px;
+    transition: 0.5s all linear;
+    height: 43px;
+    cursor: pointer;
+}
+.menu .active{
+    background-color: #EE4950;
+    border-radius: 5px;
+}
+.menu li:hover{
+    background-color: #EE4950;
+    border-radius: 5px;
+}
+.list{
+    color: #959D99;
+}
+.home{
+    color: #2E3A59;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.work{
+    color: #F3777D;
+}
+.list .not:hover{
+    color: white;
 }
