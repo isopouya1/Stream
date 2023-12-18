@@ -6,9 +6,10 @@
 body{
     background-color: #171717;
     font-family: 'Inter', sans-serif;
-    overflow: hidden;
 }
-
+main{
+    display: flex;
+}
 .navigation{
     width: 15%;
     background-color: #272727;
@@ -17,7 +18,8 @@ body{
     display: flex;
     flex-direction: column;
     gap: 45px;
-    height: 100000px;
+    height: 100vh;
+    position: sticky;
 }
 .logo{
     width: 80%;
@@ -30,7 +32,7 @@ body{
     flex-direction: column;
     gap: 10px;
 }
-li{
+.navigation li{
     display: flex;
     align-items: center;
     gap: 10px;
@@ -62,3 +64,448 @@ li{
 .list .not:hover{
     color: white;
 }
+.hero{
+    width: 57%;
+    height: 100vh;
+    padding: 40px 50px;
+    padding-right: 20px;
+    overflow-y: scroll;
+}
+.hero::-webkit-scrollbar{
+    width: 10px;
+}
+.banner{
+    background-image: url(assets/kavir.jpg);
+    width: 100%;
+    height: 350px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px 20px 30px 20px;
+}
+.search{
+    background-color: white;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 40px;
+    padding-left: 10px;
+    border-radius: 4px;
+    position: relative;
+    margin: 0 auto;
+}
+input{
+    border: none;
+    outline: none;
+    width: 200px;
+    color: #49504D;
+}
+.mice{
+    position: absolute;
+    border-left: 2px solid #959D99;
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+    height: 25px;
+    right: 8px;
+}
+.musictype{
+    list-style: none;
+    color: #00000000;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-size: 14px;
+    font-weight: 600;
+    gap: 5px;
+}
+.interview{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.music{
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.music .info{
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+}
+.music h1{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-weight: 300;
+    font-size: 23px;
+}
+.music .music-name{
+    font-weight: 600;
+    font-size: 30px;
+}
+.btns{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: start;
+    gap: 25px;
+}
+.btns button{
+    width: 95.377px;
+    height: 38.151px;
+    padding: 9.538px;
+    background-color: #EE4950; 
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+.heart:active{
+    fill: #EE4950;
+    cursor: pointer;
+}
+.releases{
+    margin-top: 25px;
+}
+.rls-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.rls-title h1{
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 10px;
+    font-weight: 400;
+}
+.rls-title span{
+    color: #F3777D;
+}
+.rls-body{
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+    gap: 20px;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+.rls-body::-webkit-scrollbar{
+    width: 10px;
+}
+.card{
+    width: 200px;
+    min-width: 200px;
+    height: auto;
+    color: white;
+}
+.card .cover{
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+.card .first-cover{
+    background-image: url(assets/godpoori.jpg);
+}
+.card .second-cover{
+    background-image: url(assets/god.jpg);
+}
+.card .third-cover{
+    background-image: url(assets/cover.jpg);
+}
+.card .fourth-cover{
+    background-image: url(assets/coverf.jpg);
+}
+.card span{
+    color: #AFB6B2;
+}
+.card h1{
+    margin-top: 5px;
+}
+.singers{
+    margin-top: 20px;
+}
+.singer-body{
+    overflow: auto;
+    scroll-behavior: smooth;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.singer-body::-webkit-scrollbar{
+    width: 10px;
+}
+.user{
+    width: 100px;
+    min-width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.user-cover{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-size: cover;
+    outline: 4px solid #8F8F8F;
+    outline-offset: 3px;
+}
+.userft-cover{
+    background-image: url(assets/coverf.jpg);
+
+}
+.users-cover{
+    background-image: url(assets/godpoori.jpg);
+}
+.usert-cover{
+    background-image: url(assets/god.jpg);
+}
+.userf-cover{
+    background-image: url(assets/kavir.jpg);
+}
+.user h2{
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.user span{
+    color: #AFB6B2;
+}
+.play-body{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 200px;
+    overflow-y: scroll;
+    width: 100%;
+}
+.play-body::-webkit-scrollbar{
+    display: none;
+}
+.info{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+ .info img{
+    width: 50px;
+    height:50px;
+    border-radius: 5px;
+}
+.info span{
+    color: #626A66;
+}
+.play h1{
+    color: #AFB6B2;
+    font-size: 15px;
+    font-weight: 500;
+}
+.play .detail{
+    color: #7A8580;
+}
+.play{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+}
+.play-icon{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.play-icon span{
+    color: #AFB6B2;
+}
+.right-list{
+    width: 27%;
+    height: 100vh;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 30px;
+}
+.play-list{
+    background-color: #1E1E1E;
+    width: 100%;
+    height: 500px;
+    box-shadow: 0px 3.815px 21.937px 0px rgba(16, 18, 35, 0.30);
+    padding: 20px 15px;
+}
+.right-list{
+    overflow: scroll;
+}
+.right-list::-webkit-scrollbar{
+    display: none;
+}
+.list-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.list-header h1{
+    color: white;
+    font-size: 16px;
+}
+.list-btn{
+    background-color: #49504D;
+    padding: 6px;
+    width: 130px;
+
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+.list-btn button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    width: 50%;
+    cursor: pointer;
+    transition: 0.2s all linear;
+    padding: 6px ;
+    border-radius: 2px;
+}
+.list-btn button:hover{
+    background-color: #EE4950;
+}
+.list-btn .active{
+    background-color: #EE4950;;
+}
+.music-list .info h1{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 16px;
+    gap: 5px;
+    font-weight: 600;
+}
+.music-list .info span{
+    color: #AFB6B2;
+    font-size: 13px;
+}
+.music-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #313533;
+    padding-bottom: 20px;
+}
+.music-l{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 25px;
+    overflow-y: scroll;
+    height: 90%;
+}
+.music-l::-webkit-scrollbar{
+    display: none;
+}
+.category{
+    margin-top: 20px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto auto;
+}
+.cat{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FAFAFA;
+    background-image: url(assets/cat.png);
+    background-size: cover;
+    border-radius: 5px;
+}
+.cal{
+    background-image: url(assets/podcast.png);
+}
+.categories{
+    padding-bottom: 30px;
+}
+.playing-tab{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    background-color: #272727;
+    bottom: 0;
+    border-top: 2px solid #7A8580;
+    padding: 0 60px;
+}
+.music-player img{
+    width: 50px;
+}
+.music-player{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    border-right: 2px solid #7A8580;
+    height: 100%;
+    padding-right: 80px;
+}
+.music-player h1{
+    color: white;
+    font-size: 17px;
+}
+.music-player h1 span{
+    color: #AFB6B2;
+    font-weight: 400;
+}
+.music-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.music-time{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.music-time span{
+    color: #FAFAFA;
+    font-size: 13px;
+}
+.time-bg{
+    width: 500px;
+    background-color: #E4E7E5;
+    height: 4px;
+}
+.time-bg div{
+    width: 70%;
+    height: 100%;
+    background-color: #EE4950;
+    
+}
+.music-info{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+/* svg{
+    transition: 0.1s all linear;
+    cursor: pointer;
+}
+svg:hover{
+    transform: scale(1.1);
+}
+path{
+    transition: 0.1s all linear;
+}
+path:hover{
+    fill: #EE4950;
+} */
